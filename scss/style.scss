@@ -1,55 +1,54 @@
-@media only screen and (vw max: 300px) {
-  body {;
-    background-color: red
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: red;
+    font: 12px arial, sans-serif;
+  }
+  #container{
+
   }
   #small {
-    position: relative
+
   }
   #medium, #large {
-    visibility:hidden;
-    position: absolute;
+
+
   }
-  font: 12px arial, sans-serif
 }
 
-@media only screen and (vw min: 300px) and (vw max: 768px) {
+
+@media only screen and (min-width: 301px) and (max-width: 768px) {
   body {
     background-color: green;
-  }
-  #small, #large {
-    visibility:hidden;
-    position: absolute;
-  }
-  #small {
-    width: 2/3
-  }
-  #large {
-    width: 100%
+    font: 12px arial, sans-serif;
   }
   #medium {
-    position: relative;
-    width: 1/3;
+    width: 30%;
+    float: right;
   }
-  font: 16px "Tibetan Machine Uni", Serif
+  #small {
+    float:left;
+    width: 60%
+  }
+  #large {
+
+  }
+
 }
 
-@media only screen and (vw min: 768px) {
+@media only screen and (min-width: 768px) {
   body {
     background-color: blue;
+    font: 20px "URW Gothic L", Samanata;
   }
-  div {
-    display: inline-block;
-
-    #small, #medium {
-      visibility:hidden;
-      position: absolute;
-    }
-
-    #large {
-      position: relative
-    }
-
-    font: 20px "URW Gothic L", Samanata
+  #container{margin:auto;
+  width: 80%;
+  }
+  #small,#medium,#large{
+    display:inline-block;
+    max-width: 30%;
+    float: left;
+;
   }
 }
+
 
